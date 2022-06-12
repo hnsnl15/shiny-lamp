@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="./image/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="./CSS/patient-form.css">
+    <title>Kaizen Clinic Care | Get Healthy Everyday</title>
+</head>
+<body>
+    <!-- Header area -->
+    <header class="landing-page-header">
+        <nav class="navigation-area">
+            <div id="header-logo">Kaizen Clinic</div>
+            <ul class="nav-links-container">
+                <li class="nav-links"><a href="./index.html">Home</a></li>
+                <li class="nav-links"><a href="#">About</a></li>
+                <li class="nav-links"><a href="#">Contact</a></li>
+                <li class="nav-links"><a href="./registration-page.html">Register</a></li>
+                <li class="nav-links"><a href="./login.html">Log in</a></li>
+            </ul>    
+        </nav>
+    </header>
+<body>
+    <main class="main-patient-form-page">
+        <span id="display"></span>
+        <section class="patient-form-container">
+            <div class="title-form">
+                <h1>Patient Form</h1>
+            </div>
+            <form action="#" id="patient-form-check-up">
+                <div><h3>Personal Information</h3></div>
+                <section class="sect1">
+                    <span class="fname-span-container">
+                        <label for="fname-input-field">First Name:</label>
+                        <input type="text" id="fname-input-field" required maxlength="25">
+                    </span>
+                    <span class="fname-span-container">
+                        <label for="mname-input-container">Middle Name:</label>
+                        <input type="text" id="mname-input-field" required maxlength="25">
+                    </span>
+                    <span class="lname-span-container">
+                        <label for="lname-input-field">Last Name:</label>
+                        <input type="text" id="lname-input-field" required maxlength="25">
+                    </span>
+                </section>
+
+                <section class="sect2">
+                    <span class="address-span-container">
+                        <label for="address-input-field">Address:</label>
+                        <input type="text" id="address-input-field" required >
+                    </span>
+                </section>
+
+                <section class="sect3">
+                    <span class="contact-details-span-container">
+                        <label for="contact-input-field">Mobile Number:</label>
+                        <input type="tel" id="contact-input-field" required >
+                    </span>
+                    <span class="bday-span-container">
+                        <label for="bday-input-field">Birthdate:</label>
+                        <input type="date" id="bday-input-field">
+                    </span>
+                    <div class="gender-span-container">
+                        <h3>Gender</h3>
+                        <span class="male">
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                        </span>
+                        <span class="female">
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                        </span>
+                    </div>
+                </section>
+
+                <section class="sect4">
+                    <div class="medical-history-container">
+                        <div><h3>Medical Information</h3></div>
+                        <div>
+                            <input type="checkbox" name="Asthma" id="asthma">
+                            <label for="asthma">Asthma</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Cancer" id="cancer">
+                            <label for="cancer">Cancer</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Cardiac Disease" id="cardiac-disease">
+                            <label for="cardiac-disease">Cardiac Disease</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Diabetes" id="diabetes">
+                            <label for="diabetes">Diabetes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Hypertension" id="hypertension">
+                            <label for="hypertension">Hypertension</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Psychiatric Disorder" id="psychiatric-disorder">
+                            <label for="psychiatric-disorder">Psychiatric Disorder</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Epilepsy" id="epilepsy">
+                            <label for="epilepsy">Epilepsy</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Others" id="others">
+                            <label for="others">Others</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="None" id="none">
+                            <label for="none">None</label>
+                        </div>
+                    </div>
+
+                    <div class="current-symptoms-container">
+                        <div><h3>Current Symptoms</h3></div>
+                        <select name="Current Symptoms" id="current-symptoms-option" multiple>
+                            <option value="Chest Pain">Chest Pain</option>
+                            <option value="Chest Pain">Respiratory</option>
+                            <option value="Hermatological">Hermatological</option>
+                            <option value="Lymphatic">Lymphatic</option>
+                        </select>
+                    </div>
+
+                    <div class="comment-input-container">
+                        <h3>Are you taking medication?</h3>
+                        <span class="yes-radio">
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="affirm" id="yes" value="Yes">
+                        </span>
+                        <span class="no-radio">
+                            <label for="no">No</label>
+                            <input type="radio" name="affirm" id="no" value="No">
+                        </span>
+                        <div>
+                            <textarea name="Comment-container" id="comment"></textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sect5">
+                    <span>
+                        <button type="button" id="submit-btn-patient-form" onclick="validateInput()">
+                            Submit
+                        </button>
+                    </span>
+                    <span>
+                        <button type="reset" id="reset-btn-patient-form">Reset</button>
+                    </span>
+                </section>
+            </form>
+        </section>
+        <form action="#" id="log-out-form">
+            <button id="log-out-btn">
+                Log Out
+            </button>
+        </form>
+    </main>
+    <script src="./Js/user-info.js"></script>
+</body>
+</html>

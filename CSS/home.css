@@ -1,0 +1,83 @@
+/* Rule set for Header & Navigation Area */
+.navigation-area {
+    padding: max(5vh, 1rem);
+    display: flex;
+    justify-content: space-between;
+    overflow-y: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.nav-links-container {
+    list-style: none;
+    display: flex;
+}
+.nav-links {
+    font-size: 2.2vmin;
+    margin: 25px 30px;
+}
+.nav-links a {
+    color: rgb(35, 49, 49);
+    text-decoration: none;
+    font-weight: 500;
+}
+#header-logo {
+    font-size: clamp(4vmin, 2vw + 1rem, 5rem);
+}
+/* Rule set for Main Landing Page */
+.landing-page-main {
+    width: 100vw;   
+    height: auto;
+    background:
+    linear-gradient(45deg,
+    var(--color-1),
+    var(--color-2),
+    var(--color-3));
+    position: relative;
+    display: flex;
+}
+.container-div-1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.big-text-area-container {
+    line-height: 2;
+    width: 50%;
+    display: grid;
+    place-content: center;
+}
+.big-text-area-container p {
+    font-size: 2vw;
+    color: var(--color-4);
+    text-align: center;
+}
+.big-text-area-container h1 {
+    font-size: 4vw;
+    color: var(--color-4);
+    text-align: center;
+}
+.figure-1 {
+    position: relative;
+    width: 50%;
+}
+#dummy-doctor-1-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#dummy-doctor-1 {
+    width: min(40vw, 88.9vmin);
+    position: absolute;
+    bottom: 0;
+}
+/* Media Query Breaks. */
+@media screen and (max-width: 1220px) {
+    .big-text-area-container {
+        padding: 0 30px;
+    }
+}

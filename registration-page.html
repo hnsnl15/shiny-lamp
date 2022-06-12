@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="./image/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="./CSS/forms.css">
+    <title>Kaizen Clinic Care Register now | Kaizen Clinic - Get Healthy Everyday!</title>
+</head>
+<body>
+    <!-- Header area -->
+    <header class="landing-page-header">
+        <nav class="navigation-area">
+            <div id="header-logo">Kaizen Clinic</div>
+            <ul class="nav-links-container">
+                <li class="nav-links"><a href="./index.html">Home</a></li>
+                <li class="nav-links"><a href="#">About</a></li>
+                <li class="nav-links"><a href="#">Contact</a></li>
+                <li class="nav-links"><a href="./registration-page.html">Register</a></li>
+                <li class="nav-links"><a href="./login.html">Log in</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <!-- Main page form -->
+    <main class="main-register-form">
+        <section class="form-container-1">
+            <form action="#" id="registration-form-1">
+                <div class="username-container input-containers">
+                    <label for="username-input">Username:</label>
+                    <input type="text" id="username-input" autocomplete="off" maxlength="25" required>
+                </div>
+                <div class="fname-container input-containers">
+                    <label for="fname-input">First name: </label>
+                    <input type="text" id="fname-input" autocomplete="off" 
+                    maxlength="25" required>
+                </div>
+                <div class="mname-container input-containers">
+                    <label for="mname-input">Middle name:</label>
+                    <input type="text" id="mname-input" autocomplete="off" maxlength="25">
+                </div>
+                <div class="surname-container input-containers">
+                    <label for="surname-input">Surname: </label>
+                    <input type="text" id="surname-input" autocomplete="off" maxlength="25"required>
+                </div>
+                <div class="registration-password-input-container input-containers">
+                    <label for="registration-password-input">Password: </label>
+                    <input type="password" id="registration-password-input" autocomplete="off" maxlength="25" required>
+                </div>
+                <div class="repeat-password-input-container input-containers">
+                    <label for="repeat-password-input">Repeat password: </label>
+                    <input type="password" id="repeat-password-input" autocomplete="off" maxlength="25" required>
+                </div>
+                <button type="submit" id="register-btn">Register</button>
+            </form>
+        </section>
+    </main>
+    <script src="./Js/user.js"></script>
+</body>
+</html>

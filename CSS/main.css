@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora&display=swap');
+
+:root {
+    --color-1: hsl(200, 72%, 58%);
+    --color-2: hsl(200, 56%, 79%);
+    --color-3: hsl(198, 41%, 87%);
+    --color-4: hsl(201, 77%, 20%);
+}
+/* Setting the universal rule. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    font-family: 'Lora', sans-serif;
+        width: 100vw;
+    overflow-x: hidden;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+/* Navigation area */
+
+/* Footer area */

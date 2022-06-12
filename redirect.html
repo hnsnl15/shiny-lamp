@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="4.4; ./patient-form.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        background: lightblue;
+    }
+    main {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+</style>
+<body>
+    <main>
+        <section>
+            <h1 id="redirecting"></h1>
+        </section>
+    </main>
+    <script>
+        let counter = document.getElementById('redirecting');
+        let count = 3;
+        setInterval(() => {
+
+            counter.textContent = `Redirecting in ${count}...`;
+            count--
+
+        }, 1000)
+    </script>
+</body>
+</html>

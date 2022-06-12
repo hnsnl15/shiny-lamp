@@ -1,0 +1,72 @@
+.main-register-form {
+    height: 120vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.form-container-1 {
+    width: clamp(60%, 50%, 60%);
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+#registration-form-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 5vh;
+    padding: 6%;
+    border-radius: 30px;
+    background: 
+    linear-gradient(
+    245deg,
+    var(--color-4),
+    hsl(213, 35%, 51%));
+    color: var(--color-3);
+    box-shadow: 
+    0px 20px 20px 1px rgb(131, 146, 173),
+    0px 0px 4px 4px rgba(11, 11, 11, .15);
+}
+.input-containers {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+}
+#register-btn {
+    width: 100px;
+    align-self: flex-end;
+    font-size: 1.2rem;
+    padding: 2%;
+    border-radius: 10px;
+    background: var(--color-1);
+    border: 2px transparent solid;
+    color: white;
+    transition: all 300ms ease-in;
+}
+input {
+    width: 20vw;
+    border-radius: 10px;
+    background: transparent;
+    padding: 10px;
+    border: 2px solid var(--color-1);
+    font-size: 1.3rem;
+    font-family: inherit;
+    color: var(--color-3);
+    transition: all 300ms ease-in;
+    position: relative;
+}
+input:hover {
+    border: 2px solid var(--color-3);
+}
+input:focus {
+    border: 2px solid var(--color-3);
+    outline: none;
+}
+label {
+    text-align: end;
+    font-size: 1.6rem;
+}
+#register-btn:hover {
+    background: transparent;
+    border: 2px solid var(--color-3);
+}
